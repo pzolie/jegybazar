@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* global css*/
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.lead {
+  font-size: 1.2em;
+}
+
+footer {
+  height: 60px;
+}
+
+/* index.html css*/
+.index_card {
+  border: none;
+}
+
+.index_text {
+  min-height: 8em;
+}
+
+.index_btn_card {
+  width: 10em;
+}
+
+.calendar {
+  height: 50px;
+  width: 50px;
+}
