@@ -19,7 +19,12 @@
 </div>
 
 <div class="card-deck">
-  <div class="card-deck pb-5 pt-5">
+  <div class="card-deck pb-5 pt-5" *ngFor="let evg of eventsGruppedBy3">
+    <app-eventcard class="col col-md-6 col-lg-4"
+                   *ngFor="let ev of evg" [esemeny]="ev">
+    </app-eventcard>
+  </div>
+    <!--  <div class="card-deck pb-5 pt-5">
     <app-eventcard class="col col-md-6 col-lg-4"></app-eventcard>
     <app-eventcard class="col col-md-6 col-lg-4"></app-eventcard>
     <app-eventcard class="col col-md-6 col-lg-4"></app-eventcard>
@@ -33,5 +38,5 @@
     <app-eventcard class="col col-md-6 col-lg-4"></app-eventcard>
     <app-eventcard class="col col-md-6 col-lg-4"></app-eventcard>
     <app-eventcard class="col col-md-6 col-lg-4"></app-eventcard>
-  </div>
+  </div> -->
 </div>
